@@ -8,7 +8,7 @@ file_path = 'data.csv'
 if os.path.exists(file_path) == False:
    urllib.request.urlretrieve(file_url, file_path)
 
-# read the data with csv into list 'pop'
+# read the data with csv into list 'sales'
 sales = []
 with open('data.csv', 'r') as file:
     csv_reader = csv.reader(file, delimiter=',')
